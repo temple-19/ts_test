@@ -8,7 +8,7 @@ describe("AbstractLibrary - Adding and Removing Books", () => {
 
   beforeEach(() => {
     library = new HistoryLibrary();
-    book = new Book("History of the World", "Author A", "12345");
+    book = new Book("harry potter", "shams", "12345");
   });
 
   test("should add a book to the library", () => {
@@ -34,8 +34,8 @@ describe("Member - Borrowing and Returning Books", () => {
   let member: Member;
 
   beforeEach(() => {
-    book = new Book("History of the World", "Author A", "12345");
-    member = new Member(1, "John Doe");
+    book = new Book("harry potter", "shams", "12345");
+    member = new Member(1, "Jake Long");
   });
 
   test("should borrow a book if it is available", () => {
@@ -69,7 +69,7 @@ describe("AbstractLibrary - Registering Members", () => {
 
   beforeEach(() => {
     library = new HistoryLibrary();
-    member = new Member(1, "Jane Doe");
+    member = new Member(1, "Jake Long");
   });
 
   test("should register a new member", () => {
@@ -78,7 +78,7 @@ describe("AbstractLibrary - Registering Members", () => {
   });
 
   test("should handle multiple members", () => {
-    const member2 = new Member(2, "John Smith");
+    const member2 = new Member(2, "Jorja Smith");
     library.registerMember(member);
     library.registerMember(member2);
 
