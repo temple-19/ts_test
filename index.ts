@@ -130,7 +130,7 @@ class BiologyLibrary extends AbstractLibrary {
 // const historyLibrary = new HistoryLibrary();
 // const librarian = new Librarian(1, "shams");
 // historyLibrary.registerMember(librarian);
-// const book1 = new Book("History of the World", "Author", "12345");
+// const book1 = new Book("gst 102", "Shams", "12345");
 // librarian.addBook(book1, historyLibrary);
 // librarian.borrowBook(book1);
 // librarian.returnBook(book1);
